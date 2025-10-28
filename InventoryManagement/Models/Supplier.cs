@@ -1,0 +1,54 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+using Microsoft.EntityFrameworkCore;
+
+namespace InventoryManagement.Models;
+
+public partial class Supplier
+{
+    [Key]
+    [StringLength(50)]
+    public string SupplierCompanyID { get; set; }
+
+    [StringLength(250)]
+    public string SupplierCompanyName { get; set; }
+
+    public string Address { get; set; }
+
+    [StringLength(250)]
+    public string Phone { get; set; }
+
+    [StringLength(50)]
+    public string Mobile { get; set; }
+
+    [StringLength(50)]
+    public string Fax { get; set; }
+
+    [Column(TypeName = "datetime")]
+    public DateTime? CreateDate { get; set; }
+
+    [StringLength(250)]
+    public string CreateBy { get; set; }
+
+    [StringLength(250)]
+    public string UpdateBy { get; set; }
+
+    [Column(TypeName = "datetime")]
+    public DateTime? UpdateDate { get; set; }
+
+    [Column(TypeName = "image")]
+    public byte[]? Logo { get; set; }
+
+    public bool? IsCashBack { get; set; }
+
+    [Column(TypeName = "decimal(18, 2)")]
+    public decimal? OpeningAmt { get; set; }
+
+    [InverseProperty("SupplierCompany")]
+    public virtual ICollection<Item> Item { get; set; } = new List<Item>();
+
+    [InverseProperty("SupplierCompany")]
+    public virtual ICollection<ItemReceive> ItemReceive { get; set; } = new List<ItemReceive>();
+}

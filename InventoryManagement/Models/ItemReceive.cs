@@ -1,0 +1,83 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+using Microsoft.EntityFrameworkCore;
+
+namespace InventoryManagement.Models;
+
+public partial class ItemReceive
+{
+    [Key]
+    public int id { get; set; }
+
+    [StringLength(50)]
+    public string ChalanNo { get; set; }
+
+    [StringLength(50)]
+    public string SupplierCompanyID { get; set; }
+
+    [StringLength(50)]
+    public string ItemID { get; set; }
+
+    [Column(TypeName = "decimal(18, 2)")]
+    public decimal? purchasePrice { get; set; }
+
+    [Column(TypeName = "decimal(18, 2)")]
+    public decimal? TotalPurchasePrice { get; set; }
+
+    [Column(TypeName = "decimal(18, 2)")]
+    public decimal? SalesPrice { get; set; }
+
+    [Column(TypeName = "decimal(18, 2)")]
+    public decimal? TotalSalesPrice { get; set; }
+
+    [Column(TypeName = "decimal(18, 2)")]
+    public decimal? WholeSalesPrice { get; set; }
+
+    [Column(TypeName = "decimal(18, 2)")]
+    public decimal? DiscountPersent { get; set; }
+
+    [Column(TypeName = "decimal(18, 2)")]
+    public decimal? TradePrice { get; set; }
+
+    [Column(TypeName = "decimal(18, 2)")]
+    public decimal? ProfitPersent { get; set; }
+
+    [Column(TypeName = "decimal(18, 2)")]
+    public decimal? ProfitAmt { get; set; }
+
+    public DateOnly? ReceiveDate { get; set; }
+
+    [Column(TypeName = "decimal(18, 2)")]
+    public decimal? ReceiveQTY { get; set; }
+
+    public int? TotalRecQty { get; set; }
+
+    [Column(TypeName = "decimal(18, 0)")]
+    public decimal? TotalAmount { get; set; }
+
+    [StringLength(550)]
+    public string ItemInfo { get; set; }
+
+    [StringLength(150)]
+    public string CREATE_BY { get; set; }
+
+    public DateOnly? CREATE_DATE { get; set; }
+
+    [StringLength(150)]
+    public string UPDATE_BY { get; set; }
+
+    public DateOnly? UPDATE_DATE { get; set; }
+
+    [StringLength(50)]
+    public string MemoNo { get; set; }
+
+    [ForeignKey("ItemID")]
+    [InverseProperty("ItemReceive")]
+    public virtual Item Item { get; set; }
+
+    [ForeignKey("SupplierCompanyID")]
+    [InverseProperty("ItemReceive")]
+    public virtual Supplier SupplierCompany { get; set; }
+}

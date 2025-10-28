@@ -1,0 +1,86 @@
+﻿using System;
+using System.Collections.Generic;
+using Microsoft.EntityFrameworkCore;
+
+namespace InventoryManagement.Models;
+
+public class inventoryManagementContext : DbContext
+{
+    public inventoryManagementContext()
+    {
+
+    }
+
+    public inventoryManagementContext(DbContextOptions<inventoryManagementContext> options)
+        : base(options)
+    {
+
+    }
+
+    public virtual DbSet<Category> Category { get; set; }
+
+    public virtual DbSet<CustomerLedger> CustomerLedger { get; set; }
+
+    public virtual DbSet<CustomerSetup> CustomerSetup { get; set; }
+
+    public virtual DbSet<Item> Item { get; set; }
+
+    public virtual DbSet<ItemReceive> ItemReceive { get; set; }
+
+    public virtual DbSet<Sales> Sales { get; set; }
+
+    public virtual DbSet<SalesReturn> SalesReturn { get; set; }
+
+    public virtual DbSet<Supplier> Supplier { get; set; }
+
+    public virtual DbSet<SupplierLedger> SupplierLedger { get; set; }
+
+    public virtual DbSet<UOM> UOM { get; set; }
+
+    //    protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+    //#warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see https://go.microsoft.com/fwlink/?LinkId=723263.
+    //        => optionsBuilder.UseSqlServer("Data Source=DESKTOP-FVP982U\\MSSQLSERVER2022;Initial Catalog=inventoryManagement;User ID=sa;Password=root;Encrypt=False");
+
+    //protected override void OnModelCreating(ModelBuilder modelBuilder)
+    //{
+    //    modelBuilder.Entity<Category>(entity =>
+    //    {
+    //        entity.HasKey(e => e.CategoryID).HasName("PK_tblCategory");
+    //    });
+
+    //    modelBuilder.Entity<Item>(entity =>
+    //    {
+    //        entity.HasOne(d => d.Category).WithMany(p => p.Item).HasConstraintName("FK_Item_Category");
+
+    //        entity.HasOne(d => d.SupplierCompany).WithMany(p => p.Item).HasConstraintName("FK_Item_SupplierCompany");
+
+    //        entity.HasOne(d => d.Uom).WithMany(p => p.Item).HasConstraintName("FK_Item_UOM");
+    //    });
+
+    //    modelBuilder.Entity<ItemReceive>(entity =>
+    //    {
+    //        entity.HasOne(d => d.Item).WithMany(p => p.ItemReceive).HasConstraintName("FK_ItemReceive_Item");
+
+    //        entity.HasOne(d => d.SupplierCompany).WithMany(p => p.ItemReceive).HasConstraintName("FK_ItemReceive_SupplierCompany");
+    //    });
+
+    //    modelBuilder.Entity<SalesReturn>(entity =>
+    //    {
+    //        entity.Property(e => e.ID).ValueGeneratedOnAdd();
+    //    });
+
+    //    modelBuilder.Entity<Supplier>(entity =>
+    //    {
+    //        entity.HasKey(e => e.SupplierCompanyID).HasName("PK_SupplierCompany");
+    //    });
+
+    //    modelBuilder.Entity<UOM>(entity =>
+    //    {
+    //        entity.HasKey(e => e.UomID).HasName("PK_tblUOM");
+    //    });
+
+
+    //}
+
+
+}

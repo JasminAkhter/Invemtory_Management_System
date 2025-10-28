@@ -1,0 +1,35 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+using Microsoft.EntityFrameworkCore;
+
+namespace InventoryManagement.Models;
+
+public partial class UOM
+{
+    [Key]
+    [StringLength(10)]
+    public string UomID { get; set; }
+
+    [StringLength(250)]
+    public string UOMName { get; set; }
+
+    [StringLength(50)]
+    public string Description { get; set; }
+
+    [StringLength(250)]
+    public string CreateBy { get; set; }
+
+    [Column(TypeName = "datetime")]
+    public DateTime? CreateDate { get; set; }
+
+    [StringLength(250)]
+    public string UpdateBy { get; set; }
+
+    [Column(TypeName = "datetime")]
+    public DateTime? UpdateDate { get; set; }
+
+    [InverseProperty("Uom")]
+    public virtual ICollection<Item> Item { get; set; } = new List<Item>();
+}

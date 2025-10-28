@@ -1,0 +1,100 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+using Microsoft.EntityFrameworkCore;
+
+namespace InventoryManagement.Models;
+
+public partial class Item
+{
+    [Key]
+    [StringLength(50)]
+    public string Item_Id { get; set; }
+
+    [StringLength(550)]
+    public string ItemName { get; set; }
+
+    [StringLength(10)]
+    public string CategoryID { get; set; }
+
+    [StringLength(10)]
+    public string ModelID { get; set; }
+
+    [StringLength(10)]
+    public string BrandID { get; set; }
+
+    [StringLength(10)]
+    public string SizeID { get; set; }
+
+    [StringLength(50)]
+    public string ColorID { get; set; }
+
+    [StringLength(10)]
+    public string UomID { get; set; }
+
+    [StringLength(50)]
+    public string SupplierCompanyID { get; set; }
+
+    [StringLength(50)]
+    public string ProductBarcode { get; set; }
+
+    [StringLength(50)]
+    public string BarCode1 { get; set; }
+
+    [StringLength(50)]
+    public string Barcode2 { get; set; }
+
+    [Column(TypeName = "decimal(18, 2)")]
+    public decimal? PurchasePrice { get; set; }
+
+    [Column(TypeName = "decimal(18, 2)")]
+    public decimal? SalesPrice { get; set; }
+
+    [Column(TypeName = "decimal(18, 2)")]
+    public decimal? WholeSalesPrice { get; set; }
+
+    [Column(TypeName = "decimal(18, 2)")]
+    public decimal? DiscountPersent { get; set; }
+
+    [Column(TypeName = "decimal(18, 2)")]
+    public decimal? TradePrice { get; set; }
+
+    [Column(TypeName = "decimal(18, 2)")]
+    public decimal? ProfitPersent { get; set; }
+
+    [Column(TypeName = "decimal(18, 2)")]
+    public decimal? ProfitAmt { get; set; }
+
+    [StringLength(250)]
+    public string CREATE_BY { get; set; }
+
+    public DateTime? CREATE_DATE { get; set; }
+
+    [StringLength(50)]
+    public string UPDATE_BY { get; set; }
+
+    public DateTime? UPDATE_DATE { get; set; }
+
+    public bool? InActive { get; set; }
+
+    [Column(TypeName = "decimal(18, 2)")]
+    public decimal? OpeningStock { get; set; }
+
+    public int? MinimumAlertQty { get; set; }
+
+    [ForeignKey("CategoryID")]
+    [InverseProperty("Item")]
+    public virtual Category Category { get; set; }
+
+    [InverseProperty("Item")]
+    public virtual ICollection<ItemReceive> ItemReceive { get; set; } = new List<ItemReceive>();
+
+    [ForeignKey("SupplierCompanyID")]
+    [InverseProperty("Item")]
+    public virtual Supplier SupplierCompany { get; set; }
+
+    [ForeignKey("UomID")]
+    [InverseProperty("Item")]
+    public virtual UOM Uom { get; set; }
+}
