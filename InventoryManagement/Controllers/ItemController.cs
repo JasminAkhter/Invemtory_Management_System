@@ -152,9 +152,9 @@ namespace InventoryManagement.Controllers
             entity.ProfitPersent = model.ProfitPersent;
             entity.ProfitAmt = model.ProfitAmt;
             entity.CREATE_BY = model.CREATE_BY;
-            entity.CREATE_DATE = model.CREATE_DATE ?? DateTime.Now;
+            entity.CREATE_DATE = model.CREATE_DATE;
             entity.UPDATE_BY = model.UPDATE_BY;
-            entity.UPDATE_DATE = model.UPDATE_DATE ?? DateTime.Now;
+            entity.UPDATE_DATE = model.UPDATE_DATE;
             entity.InActive = model.InActive;
             entity.OpeningStock = model.OpeningStock;
             entity.MinimumAlertQty = model.MinimumAlertQty;
@@ -196,7 +196,7 @@ namespace InventoryManagement.Controllers
             existingItem.CREATE_BY = existingItem.CREATE_BY;
             existingItem.CREATE_DATE = existingItem.CREATE_DATE;
             existingItem.UPDATE_BY = model.UPDATE_BY;
-            existingItem.UPDATE_DATE = model.UPDATE_DATE ?? DateTime.Now;
+            existingItem.UPDATE_DATE = model.UPDATE_DATE;
             existingItem.InActive = model.InActive;
             existingItem.OpeningStock = model.OpeningStock;
             existingItem.MinimumAlertQty = model.MinimumAlertQty;

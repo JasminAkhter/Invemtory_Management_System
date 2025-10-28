@@ -1292,7 +1292,7 @@
           },
           "creatE_DATE": {
             "type": "string",
-            "format": "date-time",
+            "format": "date",
             "nullable": true
           },
           "updatE_BY": {
@@ -1454,7 +1454,7 @@
           },
           "creatE_DATE": {
             "type": "string",
-            "format": "date-time",
+            "format": "date",
             "nullable": true
           },
           "updatE_BY": {
@@ -1465,7 +1465,7 @@
           },
           "updatE_DATE": {
             "type": "string",
-            "format": "date-time",
+            "format": "date",
             "nullable": true
           },
           "inActive": {

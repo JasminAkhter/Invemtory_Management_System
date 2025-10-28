@@ -3,7 +3,7 @@
    "ContextClassName": "inventoryManagementContext",
    "ContextNamespace": null,
    "FilterSchemas": false,
-   "IncludeConnectionString": true,
+   "IncludeConnectionString": false,
    "MinimumProductVersion": "2.6.1186",
    "ModelNamespace": null,
    "OutputContextPath": null,
@@ -44,7 +44,7 @@
          "ObjectType": 0
       },
       {
-         "Name": "[dbo].[Supplier]",
+         "Name": "[dbo].[SupplierCompany]",
          "ObjectType": 0
       },
       {

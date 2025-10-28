@@ -38,7 +38,7 @@ namespace InventoryManagement.Controllers
                     CREATE_BY = c.CREATE_BY,
                     CREATE_DATE = c.CREATE_DATE,
                     UPDATE_BY = c.UPDATE_BY,
-                    UPDATE_DATE = c.UPDATE_DATE,
+                    UPDATE_DATE = DateTime.Now,
                     InActive = c.InActive,
                     AdvanceAmt = c.AdvanceAmt,
                     DueAmount = c.DueAmount
@@ -72,7 +72,7 @@ namespace InventoryManagement.Controllers
                 CREATE_BY = customer.CREATE_BY,
                 CREATE_DATE = customer.CREATE_DATE,
                 UPDATE_BY = customer.UPDATE_BY,
-                UPDATE_DATE = customer.UPDATE_DATE,
+                UPDATE_DATE = DateTime.Now,
                 InActive = customer.InActive,
                 AdvanceAmt = customer.AdvanceAmt,
                 DueAmount = customer.DueAmount
@@ -125,9 +125,9 @@ namespace InventoryManagement.Controllers
             entity.DueLimit = model.DueLimit;
             entity.Gread = model.Gread;
             entity.CREATE_BY = model.CREATE_BY;
-            entity.CREATE_DATE = model.CREATE_DATE ?? DateTime.Now;  
+            entity.CREATE_DATE = model.CREATE_DATE;  
             entity.UPDATE_BY = model.UPDATE_BY;
-            entity.UPDATE_DATE = model.UPDATE_DATE ?? DateTime.Now;  
+            entity.UPDATE_DATE = DateOnly.MinValue;  
             entity.InActive = model.InActive;
             entity.AdvanceAmt = model.AdvanceAmt;
             entity.DueAmount = model.DueAmount;
@@ -159,9 +159,9 @@ namespace InventoryManagement.Controllers
             existingCustomer.DueLimit = model.DueLimit;
             existingCustomer.Gread = model.Gread;
             existingCustomer.CREATE_BY = model.CREATE_BY;
-            existingCustomer.CREATE_DATE = model.CREATE_DATE ?? existingCustomer.CREATE_DATE ?? DateTime.Now;
+            existingCustomer.CREATE_DATE = model.CREATE_DATE;
             existingCustomer.UPDATE_BY = model.UPDATE_BY;
-            existingCustomer.UPDATE_DATE = DateTime.Now;  
+            existingCustomer.UPDATE_DATE = DateOnly.MinValue;  
             existingCustomer.InActive = model.InActive;
             existingCustomer.AdvanceAmt = model.AdvanceAmt;
             existingCustomer.DueAmount = model.DueAmount;

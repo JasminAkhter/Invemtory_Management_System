@@ -79,32 +79,40 @@ namespace InventoryManagement.Controllers
         [HttpPost]
         public async Task<IActionResult> Create([FromBody] SalesReturnDTO model)
         {
-            if (!ModelState.IsValid)
-                return BadRequest(ModelState);
-
-            var entity = new SalesReturn
+            try
             {
-                ReturnInvoiceNo = model.ReturnInvoiceNo,
-                InvoiceNo = model.InvoiceNo,
-                ReturnDate = model.ReturnDate,
-                ItemID = model.ItemID,
-                CustomerID = model.CustomerID,
-                RQty = model.RQty,
-                SalesQty = model.SalesQty,
-                SalesPrice = model.SalesPrice,
-                TotalTotalPrice = model.TotalTotalPrice,
-                vat = model.vat,
-                NetAmount = model.NetAmount,
-                ReturnAmount = model.ReturnAmount,
-                CustomerPayment = model.CustomerPayment,
-                CreateBy = model.CreateBy,
-                CreateDate = model.CreateDate ?? DateOnly.FromDateTime(DateTime.Now)
-            };
+                if (!ModelState.IsValid)
+                    return BadRequest(ModelState);
 
-            await _context.SalesReturn.AddAsync(entity);
-            await _context.SaveChangesAsync();
+                var entity = new SalesReturn
+                {
+                    ReturnInvoiceNo = model.ReturnInvoiceNo,
+                    InvoiceNo = model.InvoiceNo,
+                    ReturnDate = model.ReturnDate,
+                    ItemID = model.ItemID,
+                    CustomerID = model.CustomerID,
+                    RQty = model.RQty,
+                    SalesQty = model.SalesQty,
+                    SalesPrice = model.SalesPrice,
+                    TotalTotalPrice = model.TotalTotalPrice,
+                    vat = model.vat,
+                    NetAmount = model.NetAmount,
+                    ReturnAmount = model.ReturnAmount,
+                    CustomerPayment = model.CustomerPayment,
+                    CreateBy = model.CreateBy,
+                    CreateDate = model.CreateDate ?? DateOnly.FromDateTime(DateTime.Now)
+                };
 
-            return CreatedAtAction(nameof(GetById), new { id = entity.ID }, entity);
+                await _context.SalesReturn.AddAsync(entity);
+                await _context.SaveChangesAsync();
+
+                //return CreatedAtAction(nameof(GetById), new { id = entity.ID }, entity);
+                return Ok("Saved Successfully.");
+            }
+            catch (Exception ex)
+            {
+                return Ok(ex.Message);
+            }
         }
 
 

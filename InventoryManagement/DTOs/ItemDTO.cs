@@ -93,14 +93,14 @@ namespace InventoryManagement.DTOs
         public string? CREATE_BY { get; set; }
 
 
-        public DateTime? CREATE_DATE { get; set; } = DateTime.Now;
+        public DateOnly? CREATE_DATE { get; set; }
 
 
         [StringLength(50, ErrorMessage = "UPDATE_BY cannot exceed 50 characters.")]
         public string? UPDATE_BY { get; set; }
 
 
-        public DateTime? UPDATE_DATE { get; set; }
+        public DateOnly? UPDATE_DATE { get; set; }
 
         public bool? InActive { get; set; }
 

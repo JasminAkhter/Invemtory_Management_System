@@ -44,7 +44,7 @@ namespace InventoryManagement.DTOs
         [StringLength(250, ErrorMessage = "CREATE_BY cannot exceed 250 characters.")]
         public string? CREATE_BY { get; set; }
 
-        public DateTime? CREATE_DATE { get; set; }
+        public DateOnly? CREATE_DATE { get; set; }
 
         [StringLength(50, ErrorMessage = "UPDATE_BY cannot exceed 50 characters.")]
         public string? UPDATE_BY { get; set; }
