@@ -10,7 +10,7 @@ namespace InventoryManagement.DTOs
         public int ID { get; set; }
 
         [StringLength(50, ErrorMessage = "SupplierId cannot exceed 50 characters.")]
-        public string SupplierId { get; set; }
+        public string? SupplierId { get; set; }
 
         [StringLength(50, ErrorMessage = "ChallanNo cannot exceed 50 characters.")]
         public string? ChallanNo { get; set; }

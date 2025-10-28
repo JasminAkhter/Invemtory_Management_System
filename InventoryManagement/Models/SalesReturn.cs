@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace InventoryManagement.Models;
 
-public partial class SalesReturn
+public class SalesReturn
 {
     [Key]
     [Column(TypeName = "decimal(18, 0)")]

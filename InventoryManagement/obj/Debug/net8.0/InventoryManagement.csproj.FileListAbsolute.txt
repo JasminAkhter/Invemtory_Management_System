@@ -130,6 +130,7 @@ D:\InventoryManagement\InventoryManagement\obj\Debug\net8.0\InventoryManagement.
 D:\InventoryManagement\InventoryManagement\obj\Debug\net8.0\InventoryManagement.csproj.CoreCompileInputs.cache
 D:\InventoryManagement\InventoryManagement\obj\Debug\net8.0\InventoryManagement.MvcApplicationPartsAssemblyInfo.cs
 D:\InventoryManagement\InventoryManagement\obj\Debug\net8.0\InventoryManagement.MvcApplicationPartsAssemblyInfo.cache
+D:\InventoryManagement\InventoryManagement\obj\Debug\net8.0\InventoryManagement.sourcelink.json
 D:\InventoryManagement\InventoryManagement\obj\Debug\net8.0\rjimswa.dswa.cache.json
 D:\InventoryManagement\InventoryManagement\obj\Debug\net8.0\rjsmrazor.dswa.cache.json
 D:\InventoryManagement\InventoryManagement\obj\Debug\net8.0\rjsmcshtml.dswa.cache.json

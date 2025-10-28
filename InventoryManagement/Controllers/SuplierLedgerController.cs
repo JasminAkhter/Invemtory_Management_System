@@ -88,33 +88,41 @@ namespace InventoryManagement.Controllers
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);
 
+            string newSupplierId = $"SUP-{new Random().Next(1000, 9999)}";
+
             var entity = new SupplierLedger
             {
-                SupplierId = model.SupplierId,
+                SupplierId = newSupplierId,
                 ChallanNo = model.ChallanNo,
                 CustomerLedgerNo = model.CustomerLedgerNo,
-                BillAmt = model.BillAmt,
-                PayAmt = model.PayAmt,
+                BillAmt = model.BillAmt ?? 0,
+                PayAmt = model.PayAmt ?? 0,
                 PayModeID = model.PayModeID,
-                AmountAdd = model.AmountAdd,
-                AmountOut = model.AmountOut,
+                AmountAdd = model.AmountAdd ?? 0,
+                AmountOut = model.AmountOut ?? 0,
                 BankName = model.BankName,
                 CHK_NO = model.CHK_NO,
                 CheckDate = model.CheckDate,
                 Reason = model.Reason,
                 InvoiceNo = model.InvoiceNo,
                 Comments = model.Comments,
-                CreateBy = model.CreateBy,
+                CreateBy = model.CreateBy ?? "System",
                 CreateDate = model.CreateDate ?? DateTime.Now,
-                UpdateBy = model.UpdateBy,
+                UpdateBy = model.UpdateBy ?? "System",
                 UpdateDate = model.UpdateDate ?? DateTime.Now
             };
 
             await _context.SupplierLedger.AddAsync(entity);
             await _context.SaveChangesAsync();
 
-            return Ok(entity);
+            return CreatedAtAction(nameof(GetById), new { id = entity.ID }, new
+            {
+                Message = "Supplier Ledger created successfully!",
+                entity
+            });
         }
+
+
 
 
         [HttpPut("{id}")]

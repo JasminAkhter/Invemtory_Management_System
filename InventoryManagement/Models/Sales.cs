@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace InventoryManagement.Models;
 
-public partial class Sales
+public class Sales
 {
     [Key]
     public int SalesID { get; set; }
