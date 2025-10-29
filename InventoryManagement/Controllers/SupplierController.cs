@@ -21,7 +21,7 @@ namespace InventoryManagement.Controllers
         [HttpGet]
         public async Task<IActionResult> GetAll()
         {
-            var suppliers = await _context.SupplierCompany
+            var suppliers = await _context.Supplier
                 .Select(s => new SupplierDTO
                 {
                     SupplierCompanyID = s.SupplierCompanyID,
@@ -48,7 +48,7 @@ namespace InventoryManagement.Controllers
 
         public async Task<IActionResult> GetById(string id)
         {
-            var supplier = await _context.SupplierCompany.FindAsync(id);
+            var supplier = await _context.Supplier.FindAsync(id);
             if (supplier == null)
                 return NotFound(new { Message = "Supplier not found!" });
 
@@ -78,11 +78,11 @@ namespace InventoryManagement.Controllers
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);
 
-            var entity = new SupplierCompany();
+            var entity = new Supplier();
 
             if (string.IsNullOrWhiteSpace(model.SupplierCompanyID))
             {
-                var lastSupplier = await _context.SupplierCompany
+                var lastSupplier = await _context.Supplier
                     .OrderByDescending(s => s.SupplierCompanyID)
                     .FirstOrDefaultAsync();
 
@@ -118,7 +118,7 @@ namespace InventoryManagement.Controllers
             entity.IsCashBack = model.IsCashBack;
             entity.OpeningAmt = model.OpeningAmt;
 
-            await _context.SupplierCompany.AddAsync(entity);
+            await _context.Supplier.AddAsync(entity);
             await _context.SaveChangesAsync();
 
             return Ok(entity);
@@ -131,7 +131,7 @@ namespace InventoryManagement.Controllers
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);
 
-            var existingSupplier = await _context.SupplierCompany.FindAsync(id);
+            var existingSupplier = await _context.Supplier.FindAsync(id);
             if (existingSupplier == null)
                 return NotFound(new { Message = "Supplier not found!" });
 
@@ -158,11 +158,11 @@ namespace InventoryManagement.Controllers
         {
             try
             {
-                var supplier = await _context.SupplierCompany.FindAsync(id);
+                var supplier = await _context.Supplier.FindAsync(id);
                 if (supplier == null)
                     return NotFound(new { Message = "Supplier not found!" });
 
-                _context.SupplierCompany.Remove(supplier);
+                _context.Supplier.Remove(supplier);
                 await _context.SaveChangesAsync();
 
                 return Ok(new { Message = "Supplier deleted successfully!" });

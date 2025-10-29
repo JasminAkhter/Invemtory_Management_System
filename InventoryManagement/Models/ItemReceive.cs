@@ -81,5 +81,5 @@ public partial class ItemReceive
 
     [ForeignKey("SupplierCompanyID")]
     [InverseProperty("ItemReceive")]
-    public virtual SupplierCompany SupplierCompany { get; set; }
+    public virtual Supplier SupplierCompany { get; set; }
 }

@@ -14,6 +14,7 @@ public partial class Item
     [StringLength(50)]
     public string Item_Id { get; set; }
 
+    [Required]
     [StringLength(550)]
     public string ItemName { get; set; }
 
@@ -94,7 +95,7 @@ public partial class Item
 
     [ForeignKey("SupplierCompanyID")]
     [InverseProperty("Item")]
-    public virtual SupplierCompany SupplierCompany { get; set; }
+    public virtual Supplier SupplierCompany { get; set; }
 
     [ForeignKey("UomID")]
     [InverseProperty("Item")]

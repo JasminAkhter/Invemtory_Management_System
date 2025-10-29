@@ -44,7 +44,7 @@
          "ObjectType": 0
       },
       {
-         "Name": "[dbo].[SupplierCompany]",
+         "Name": "[dbo].[Supplier]",
          "ObjectType": 0
       },
       {

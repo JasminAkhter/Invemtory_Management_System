@@ -8,7 +8,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace InventoryManagement.Models;
 
-public partial class UOM
+public class UOM
 {
     [Key]
     [StringLength(10)]

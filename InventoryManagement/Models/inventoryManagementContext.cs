@@ -27,7 +27,7 @@ public partial class inventoryManagementContext : DbContext
 
     public virtual DbSet<SalesReturn> SalesReturn { get; set; }
 
-    public virtual DbSet<SupplierCompany> SupplierCompany { get; set; }
+    public virtual DbSet<Supplier> Supplier { get; set; }
 
     public virtual DbSet<SupplierLedger> SupplierLedger { get; set; }
 
@@ -59,6 +59,11 @@ public partial class inventoryManagementContext : DbContext
         modelBuilder.Entity<SalesReturn>(entity =>
         {
             entity.Property(e => e.ID).ValueGeneratedOnAdd();
+        });
+
+        modelBuilder.Entity<Supplier>(entity =>
+        {
+            entity.HasKey(e => e.SupplierCompanyID).HasName("PK_SupplierCompany");
         });
 
         modelBuilder.Entity<UOM>(entity =>

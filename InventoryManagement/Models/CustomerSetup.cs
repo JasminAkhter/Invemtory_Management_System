@@ -14,6 +14,7 @@ public partial class CustomerSetup
     [StringLength(50)]
     public string CustomerID { get; set; }
 
+    [Required]
     [StringLength(250)]
     public string CustomerName { get; set; }
 
