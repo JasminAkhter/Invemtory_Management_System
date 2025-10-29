@@ -160,7 +160,7 @@
               "RelativeDocumentMoniker": "InventoryManagement\\Controllers\\ItemReceiveController.cs",
               "ToolTip": "D:\\Invemtory_Management_System\\InventoryManagement\\Controllers\\ItemReceiveController.cs",
               "RelativeToolTip": "InventoryManagement\\Controllers\\ItemReceiveController.cs",
-              "ViewState": "AgIAAHAAAAAAAAAAAAAgwLsAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAFwAAAAAAAAAAAAQwLsAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-29T06:02:50.73Z",
               "EditorCaption": ""
@@ -175,8 +175,7 @@
               "RelativeToolTip": "InventoryManagement\\DTOs\\ItemReceiveDTO.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAE8AAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-29T05:58:55.387Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-29T05:58:55.387Z"
             },
             {
               "$type": "Document",
@@ -188,8 +187,7 @@
               "RelativeToolTip": "InventoryManagement\\Models\\Sales.cs",
               "ViewState": "AgIAAEQAAAAAAAAAAAAqwGwAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-26T11:02:24.91Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-26T11:02:24.91Z"
             },
             {
               "$type": "Document",
@@ -201,8 +199,7 @@
               "RelativeToolTip": "InventoryManagement\\Models\\UOM.cs",
               "ViewState": "AgIAAAkAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-26T10:51:53.654Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-26T10:51:53.654Z"
             },
             {
               "$type": "Document",
@@ -226,8 +223,7 @@
               "RelativeToolTip": "InventoryManagement\\DTOs\\SupplierDTO.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-28T06:33:57.601Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-28T06:33:57.601Z"
             },
             {
               "$type": "Document",
@@ -239,8 +235,7 @@
               "RelativeToolTip": "InventoryManagement\\Controllers\\CategoryController.cs",
               "ViewState": "AgIAAKoAAAAAAAAAAAAIwMAAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-26T12:02:01.01Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-26T12:02:01.01Z"
             },
             {
               "$type": "Document",
@@ -252,8 +247,7 @@
               "RelativeToolTip": "InventoryManagement\\DTOs\\ItemDTO.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-27T11:47:38.135Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-27T11:47:38.135Z"
             },
             {
               "$type": "Document",
@@ -265,8 +259,7 @@
               "RelativeToolTip": "InventoryManagement\\Controllers\\ItemController.cs",
               "ViewState": "AgIAAFUAAAAAAAAAAAAEwMYAAAA4AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-27T12:04:27.49Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-27T12:04:27.49Z"
             },
             {
               "$type": "Document",
@@ -278,8 +271,7 @@
               "RelativeToolTip": "InventoryManagement\\Models\\ItemReceive.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-26T11:02:07.85Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-26T11:02:07.85Z"
             },
             {
               "$type": "Document",
@@ -291,8 +283,7 @@
               "RelativeToolTip": "InventoryManagement\\Models\\Supplier.cs",
               "ViewState": "AgIAABsAAAAAAAAAAAA4wAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-29T05:35:03.596Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-29T05:35:03.596Z"
             },
             {
               "$type": "Document",
@@ -304,8 +295,7 @@
               "RelativeToolTip": "InventoryManagement\\DTOs\\UOMDTO.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-29T05:15:05.793Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-29T05:15:05.793Z"
             },
             {
               "$type": "Document",
@@ -317,8 +307,7 @@
               "RelativeToolTip": "InventoryManagement\\Controllers\\UOMController.cs",
               "ViewState": "AgIAACIAAAAAAAAAAAAAAH8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-29T05:21:32.297Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-29T05:21:32.297Z"
             },
             {
               "$type": "Document",
@@ -330,8 +319,7 @@
               "RelativeToolTip": "InventoryManagement\\DTOs\\SalesReturnDTO.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-28T12:01:47.128Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-28T12:01:47.128Z"
             },
             {
               "$type": "Document",
@@ -343,8 +331,7 @@
               "RelativeToolTip": "InventoryManagement\\Controllers\\SupplierController.cs",
               "ViewState": "AgIAAAEAAAAAAAAAAAAYwAoAAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-28T06:44:43.125Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-28T06:44:43.125Z"
             },
             {
               "$type": "Document",
@@ -356,8 +343,7 @@
               "RelativeToolTip": "InventoryManagement\\Controllers\\SalesReturnController.cs",
               "ViewState": "AgIAAEkAAAAAAAAAAAAawFAAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-28T12:05:05.405Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-28T12:05:05.405Z"
             },
             {
               "$type": "Document",
@@ -369,8 +355,7 @@
               "RelativeToolTip": "InventoryManagement\\appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-10-26T11:23:31.869Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-26T11:23:31.869Z"
             },
             {
               "$type": "Document",
@@ -394,8 +379,7 @@
               "RelativeToolTip": "InventoryManagement\\Models\\inventoryManagementContext.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-28T18:17:44.964Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-28T18:17:44.964Z"
             },
             {
               "$type": "Document",
