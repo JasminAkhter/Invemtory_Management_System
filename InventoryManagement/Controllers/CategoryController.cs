@@ -63,35 +63,6 @@ namespace InventoryManagement.Controllers
 
 
 
-        //[HttpPut("{id}")]
-        //public async Task<IActionResult> Update(string id, [FromBody] CategoryDTO model)
-        //{
-        //    if (!ModelState.IsValid)
-        //        return BadRequest(ModelState);
-
-        //    try
-        //    {
-        //        var existingCategory = await _context.Category.FindAsync(id);
-        //        if (existingCategory == null)
-        //            return NotFound(new { Message = "Category not found!" });
-
-        //        existingCategory.CategoryName = model.CategoryName;
-        //        existingCategory.Description = model.Description;
-        //        existingCategory.Vat = model.Vat ?? 0;
-        //        existingCategory.UpdateBy = model.UpdateBy ?? "System";
-        //        existingCategory.UpdateDate = DateTime.Now;
-
-        //        await _context.SaveChangesAsync();
-
-        //        return Ok(new { Message = "Category updated successfully!", Category = existingCategory });
-        //    }
-        //    catch (Exception ex)
-        //    {
-        //        return StatusCode(500, $"Internal server error: {ex.Message}");
-        //    }
-        //}
-
-
         [HttpPost]
         public async Task<IActionResult> Create([FromBody] CategoryDTO model)
         {
@@ -127,10 +98,10 @@ namespace InventoryManagement.Controllers
                 entity.CategoryName = model.CategoryName;
                 entity.Description = model.Description;
                 entity.Vat = model.Vat;
-                entity.CreateBy = model.CreateBy;
+                entity.CreateBy = model.CreateBy ?? "System";
                 entity.CreateDate = DateTime.Now;
-                entity.UpdateBy = model.UpdateBy;
-                entity.UpdateDate = DateTime.Now;
+                //entity.UpdateBy = model.UpdateBy;
+                //entity.UpdateDate = DateTime.Now;
 
                 await _context.Category.AddAsync(entity);
                 await _context.SaveChangesAsync();
