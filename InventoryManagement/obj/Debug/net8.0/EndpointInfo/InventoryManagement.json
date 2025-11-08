@@ -24,17 +24,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/CategoryDTO"
+                "$ref": "#/components/schemas/Category"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/CategoryDTO"
+                "$ref": "#/components/schemas/Category"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/CategoryDTO"
+                "$ref": "#/components/schemas/Category"
               }
             }
           }
@@ -1299,6 +1299,64 @@
   },
   "components": {
     "schemas": {
+      "Category": {
+        "type": "object",
+        "properties": {
+          "categoryID": {
+            "maxLength": 10,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "categoryName": {
+            "maxLength": 250,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "description": {
+            "maxLength": 50,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "vat": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "createBy": {
+            "maxLength": 250,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "createDate": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "updateBy": {
+            "maxLength": 250,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "updateDate": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "item": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Item"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
       "CategoryDTO": {
         "required": [
           "categoryName"
@@ -1572,6 +1630,173 @@
         },
         "additionalProperties": false
       },
+      "Item": {
+        "required": [
+          "itemName"
+        ],
+        "type": "object",
+        "properties": {
+          "item_Id": {
+            "maxLength": 50,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "itemName": {
+            "maxLength": 550,
+            "minLength": 0,
+            "type": "string"
+          },
+          "categoryID": {
+            "maxLength": 10,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "modelID": {
+            "maxLength": 10,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "brandID": {
+            "maxLength": 10,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "sizeID": {
+            "maxLength": 10,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "colorID": {
+            "maxLength": 50,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "uomID": {
+            "maxLength": 10,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "supplierCompanyID": {
+            "maxLength": 50,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "productBarcode": {
+            "maxLength": 50,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "barCode1": {
+            "maxLength": 50,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "barcode2": {
+            "maxLength": 50,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "purchasePrice": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "salesPrice": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "wholeSalesPrice": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "discountPersent": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "tradePrice": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "profitPersent": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "profitAmt": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "creatE_BY": {
+            "maxLength": 250,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "creatE_DATE": {
+            "type": "string",
+            "format": "date",
+            "nullable": true
+          },
+          "updatE_BY": {
+            "maxLength": 50,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "updatE_DATE": {
+            "type": "string",
+            "format": "date",
+            "nullable": true
+          },
+          "inActive": {
+            "type": "boolean",
+            "nullable": true
+          },
+          "openingStock": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "minimumAlertQty": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "category": {
+            "$ref": "#/components/schemas/Category"
+          },
+          "itemReceive": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ItemReceive"
+            },
+            "nullable": true
+          },
+          "supplierCompany": {
+            "$ref": "#/components/schemas/Supplier"
+          },
+          "uom": {
+            "$ref": "#/components/schemas/UOM"
+          }
+        },
+        "additionalProperties": false
+      },
       "ItemDTO": {
         "required": [
           "itemName"
@@ -1731,6 +1956,139 @@
             "type": "integer",
             "format": "int32",
             "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "ItemReceive": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "chalanNo": {
+            "maxLength": 50,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "supplierCompanyID": {
+            "maxLength": 50,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "itemID": {
+            "maxLength": 50,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "purchasePrice": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "totalPurchasePrice": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "salesPrice": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "totalSalesPrice": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "wholeSalesPrice": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "discountPersent": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "tradePrice": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "profitPersent": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "profitAmt": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "receiveDate": {
+            "type": "string",
+            "format": "date",
+            "nullable": true
+          },
+          "receiveQTY": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "totalRecQty": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "totalAmount": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "itemInfo": {
+            "maxLength": 550,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "creatE_BY": {
+            "maxLength": 150,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "creatE_DATE": {
+            "type": "string",
+            "format": "date",
+            "nullable": true
+          },
+          "updatE_BY": {
+            "maxLength": 150,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "updatE_DATE": {
+            "type": "string",
+            "format": "date",
+            "nullable": true
+          },
+          "memoNo": {
+            "maxLength": 50,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "item": {
+            "$ref": "#/components/schemas/Item"
+          },
+          "supplierCompany": {
+            "$ref": "#/components/schemas/Supplier"
           }
         },
         "additionalProperties": false
@@ -2169,6 +2527,96 @@
         },
         "additionalProperties": false
       },
+      "Supplier": {
+        "type": "object",
+        "properties": {
+          "supplierCompanyID": {
+            "maxLength": 50,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "supplierCompanyName": {
+            "maxLength": 250,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "address": {
+            "type": "string",
+            "nullable": true
+          },
+          "phone": {
+            "maxLength": 250,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "mobile": {
+            "maxLength": 50,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "fax": {
+            "maxLength": 50,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "createDate": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "createBy": {
+            "maxLength": 250,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "updateBy": {
+            "maxLength": 250,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "updateDate": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "logo": {
+            "type": "string",
+            "format": "byte",
+            "nullable": true
+          },
+          "isCashBack": {
+            "type": "boolean",
+            "nullable": true
+          },
+          "openingAmt": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "item": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Item"
+            },
+            "nullable": true
+          },
+          "itemReceive": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ItemReceive"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
       "SupplierDTO": {
         "type": "object",
         "properties": {
@@ -2356,6 +2804,59 @@
           "updateDate": {
             "type": "string",
             "format": "date-time",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "UOM": {
+        "type": "object",
+        "properties": {
+          "uomID": {
+            "maxLength": 10,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "uomName": {
+            "maxLength": 250,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "description": {
+            "maxLength": 50,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "createBy": {
+            "maxLength": 250,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "createDate": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "updateBy": {
+            "maxLength": 250,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "updateDate": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "item": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Item"
+            },
             "nullable": true
           }
         },

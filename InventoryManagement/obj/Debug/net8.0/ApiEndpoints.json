@@ -18,8 +18,8 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "model",
-        "Type": "InventoryManagement.DTOs.CategoryDTO",
+        "Name": "entity",
+        "Type": "InventoryManagement.Models.Category",
         "IsRequired": true
       }
     ],

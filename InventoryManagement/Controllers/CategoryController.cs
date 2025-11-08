@@ -64,16 +64,16 @@ namespace InventoryManagement.Controllers
 
 
         [HttpPost]
-        public async Task<IActionResult> Create([FromBody] CategoryDTO model)
+        public async Task<IActionResult> Create([FromBody] Category entity)
         {
             try
             {
                 if (!ModelState.IsValid)
                     return BadRequest(ModelState);
 
-                var entity = new Category();
+                //var entity = new Category();
 
-                if (string.IsNullOrWhiteSpace(model.CategoryID))
+                if (string.IsNullOrWhiteSpace(entity.CategoryID))
                 {
                     var lastCategory = await _context.Category
                         .OrderByDescending(c => c.CategoryID)
@@ -92,13 +92,13 @@ namespace InventoryManagement.Controllers
                 }
                 else
                 {
-                    entity.CategoryID = model.CategoryID;
+                    entity.CategoryID = entity.CategoryID;
                 }
 
-                entity.CategoryName = model.CategoryName;
-                entity.Description = model.Description;
-                entity.Vat = model.Vat;
-                entity.CreateBy = model.CreateBy ?? "System";
+                entity.CategoryName = entity.CategoryName;
+                entity.Description = entity.Description;
+                entity.Vat = entity.Vat;
+                entity.CreateBy = entity.CreateBy ?? "System";
                 entity.CreateDate = DateTime.Now;
                 //entity.UpdateBy = model.UpdateBy;
                 //entity.UpdateDate = DateTime.Now;
