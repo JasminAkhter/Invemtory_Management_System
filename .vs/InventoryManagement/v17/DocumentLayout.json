@@ -7,6 +7,10 @@
       "RelativeMoniker": "D:0:0:{1C322DC8-2691-44A0-A41E-6A92726DFCB5}|InventoryManagement\\InventoryManagement.csproj|solutionrelative:inventorymanagement\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{1C322DC8-2691-44A0-A41E-6A92726DFCB5}|InventoryManagement\\InventoryManagement.csproj|d:\\invemtory_management_system\\inventorymanagement\\models\\inventorymanagementcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1C322DC8-2691-44A0-A41E-6A92726DFCB5}|InventoryManagement\\InventoryManagement.csproj|solutionrelative:inventorymanagement\\models\\inventorymanagementcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{1C322DC8-2691-44A0-A41E-6A92726DFCB5}|InventoryManagement\\InventoryManagement.csproj|d:\\invemtory_management_system\\inventorymanagement\\dtos\\categorydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1C322DC8-2691-44A0-A41E-6A92726DFCB5}|InventoryManagement\\InventoryManagement.csproj|solutionrelative:inventorymanagement\\dtos\\categorydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -103,10 +107,6 @@
       "RelativeMoniker": "D:0:0:{1C322DC8-2691-44A0-A41E-6A92726DFCB5}|InventoryManagement\\InventoryManagement.csproj|solutionrelative:inventorymanagement\\controllers\\salesreturncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1C322DC8-2691-44A0-A41E-6A92726DFCB5}|InventoryManagement\\InventoryManagement.csproj|d:\\invemtory_management_system\\inventorymanagement\\models\\inventorymanagementcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1C322DC8-2691-44A0-A41E-6A92726DFCB5}|InventoryManagement\\InventoryManagement.csproj|solutionrelative:inventorymanagement\\models\\inventorymanagementcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{1C322DC8-2691-44A0-A41E-6A92726DFCB5}|InventoryManagement\\InventoryManagement.csproj|d:\\invemtory_management_system\\inventorymanagement\\controllers\\customersetupcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1C322DC8-2691-44A0-A41E-6A92726DFCB5}|InventoryManagement\\InventoryManagement.csproj|solutionrelative:inventorymanagement\\controllers\\customersetupcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -154,7 +154,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Category.cs",
               "DocumentMoniker": "D:\\Invemtory_Management_System\\InventoryManagement\\Models\\Category.cs",
               "RelativeDocumentMoniker": "InventoryManagement\\Models\\Category.cs",
@@ -172,7 +172,7 @@
               "RelativeDocumentMoniker": "InventoryManagement\\Controllers\\CategoryController.cs",
               "ToolTip": "D:\\Invemtory_Management_System\\InventoryManagement\\Controllers\\CategoryController.cs",
               "RelativeToolTip": "InventoryManagement\\Controllers\\CategoryController.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAsAAAATAAAAAAAAAA==",
+              "ViewState": "AgIAABAAAAAAAAAAAAA1wHUAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-26T12:02:01.01Z",
               "EditorCaption": ""
@@ -180,30 +180,6 @@
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "UOMController.cs",
-              "DocumentMoniker": "D:\\Invemtory_Management_System\\InventoryManagement\\Controllers\\UOMController.cs",
-              "RelativeDocumentMoniker": "InventoryManagement\\Controllers\\UOMController.cs",
-              "ToolTip": "D:\\Invemtory_Management_System\\InventoryManagement\\Controllers\\UOMController.cs",
-              "RelativeToolTip": "InventoryManagement\\Controllers\\UOMController.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAqwB0AAAAqAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-29T05:21:32.297Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "UOMDTO.cs",
-              "DocumentMoniker": "D:\\Invemtory_Management_System\\InventoryManagement\\DTOs\\UOMDTO.cs",
-              "RelativeDocumentMoniker": "InventoryManagement\\DTOs\\UOMDTO.cs",
-              "ToolTip": "D:\\Invemtory_Management_System\\InventoryManagement\\DTOs\\UOMDTO.cs",
-              "RelativeToolTip": "InventoryManagement\\DTOs\\UOMDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-29T05:15:05.793Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
               "Title": "appsettings.json",
               "DocumentMoniker": "D:\\Invemtory_Management_System\\InventoryManagement\\appsettings.json",
               "RelativeDocumentMoniker": "InventoryManagement\\appsettings.json",
@@ -215,7 +191,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "InventoryManagement.csproj",
               "DocumentMoniker": "D:\\Invemtory_Management_System\\InventoryManagement\\InventoryManagement.csproj",
               "RelativeDocumentMoniker": "InventoryManagement\\InventoryManagement.csproj",
@@ -227,19 +203,55 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "CategoryDTO.cs",
               "DocumentMoniker": "D:\\Invemtory_Management_System\\InventoryManagement\\DTOs\\CategoryDTO.cs",
               "RelativeDocumentMoniker": "InventoryManagement\\DTOs\\CategoryDTO.cs",
               "ToolTip": "D:\\Invemtory_Management_System\\InventoryManagement\\DTOs\\CategoryDTO.cs",
               "RelativeToolTip": "InventoryManagement\\DTOs\\CategoryDTO.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAA5wBIAAAApAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-26T11:08:01.341Z"
             },
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "inventoryManagementContext.cs",
+              "DocumentMoniker": "D:\\Invemtory_Management_System\\InventoryManagement\\Models\\inventoryManagementContext.cs",
+              "RelativeDocumentMoniker": "InventoryManagement\\Models\\inventoryManagementContext.cs",
+              "ToolTip": "D:\\Invemtory_Management_System\\InventoryManagement\\Models\\inventoryManagementContext.cs",
+              "RelativeToolTip": "InventoryManagement\\Models\\inventoryManagementContext.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAA5wAwAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-28T18:17:44.964Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "UOMDTO.cs",
+              "DocumentMoniker": "D:\\Invemtory_Management_System\\InventoryManagement\\DTOs\\UOMDTO.cs",
+              "RelativeDocumentMoniker": "InventoryManagement\\DTOs\\UOMDTO.cs",
+              "ToolTip": "D:\\Invemtory_Management_System\\InventoryManagement\\DTOs\\UOMDTO.cs",
+              "RelativeToolTip": "InventoryManagement\\DTOs\\UOMDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-29T05:15:05.793Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 5,
+              "Title": "UOMController.cs",
+              "DocumentMoniker": "D:\\Invemtory_Management_System\\InventoryManagement\\Controllers\\UOMController.cs",
+              "RelativeDocumentMoniker": "InventoryManagement\\Controllers\\UOMController.cs",
+              "ToolTip": "D:\\Invemtory_Management_System\\InventoryManagement\\Controllers\\UOMController.cs",
+              "RelativeToolTip": "InventoryManagement\\Controllers\\UOMController.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAqwB0AAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-29T05:21:32.297Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "launchSettings.json",
               "DocumentMoniker": "D:\\Invemtory_Management_System\\InventoryManagement\\Properties\\launchSettings.json",
               "RelativeDocumentMoniker": "InventoryManagement\\Properties\\launchSettings.json",
@@ -251,7 +263,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\Invemtory_Management_System\\InventoryManagement\\Program.cs",
               "RelativeDocumentMoniker": "InventoryManagement\\Program.cs",
@@ -263,7 +275,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "SupplierLedger.cs",
               "DocumentMoniker": "D:\\Invemtory_Management_System\\InventoryManagement\\Models\\SupplierLedger.cs",
               "RelativeDocumentMoniker": "InventoryManagement\\Models\\SupplierLedger.cs",
@@ -275,7 +287,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "UOM.cs",
               "DocumentMoniker": "D:\\Invemtory_Management_System\\InventoryManagement\\Models\\UOM.cs",
               "RelativeDocumentMoniker": "InventoryManagement\\Models\\UOM.cs",
@@ -287,7 +299,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "SupplierLedgerDTO.cs",
               "DocumentMoniker": "D:\\Invemtory_Management_System\\InventoryManagement\\DTOs\\SupplierLedgerDTO.cs",
               "RelativeDocumentMoniker": "InventoryManagement\\DTOs\\SupplierLedgerDTO.cs",
@@ -299,7 +311,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "SupplierDTO.cs",
               "DocumentMoniker": "D:\\Invemtory_Management_System\\InventoryManagement\\DTOs\\SupplierDTO.cs",
               "RelativeDocumentMoniker": "InventoryManagement\\DTOs\\SupplierDTO.cs",
@@ -311,7 +323,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "SalesDTO.cs",
               "DocumentMoniker": "D:\\Invemtory_Management_System\\InventoryManagement\\DTOs\\SalesDTO.cs",
               "RelativeDocumentMoniker": "InventoryManagement\\DTOs\\SalesDTO.cs",
@@ -323,7 +335,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 16,
               "Title": "ItemReceiveDTO.cs",
               "DocumentMoniker": "D:\\Invemtory_Management_System\\InventoryManagement\\DTOs\\ItemReceiveDTO.cs",
               "RelativeDocumentMoniker": "InventoryManagement\\DTOs\\ItemReceiveDTO.cs",
@@ -335,7 +347,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "SalesReturnDTO.cs",
               "DocumentMoniker": "D:\\Invemtory_Management_System\\InventoryManagement\\DTOs\\SalesReturnDTO.cs",
               "RelativeDocumentMoniker": "InventoryManagement\\DTOs\\SalesReturnDTO.cs",
@@ -347,7 +359,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 17,
               "Title": "ItemDTO.cs",
               "DocumentMoniker": "D:\\Invemtory_Management_System\\InventoryManagement\\DTOs\\ItemDTO.cs",
               "RelativeDocumentMoniker": "InventoryManagement\\DTOs\\ItemDTO.cs",
@@ -359,7 +371,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 18,
               "Title": "CustomrerLedgerDTO.cs",
               "DocumentMoniker": "D:\\Invemtory_Management_System\\InventoryManagement\\DTOs\\CustomrerLedgerDTO.cs",
               "RelativeDocumentMoniker": "InventoryManagement\\DTOs\\CustomrerLedgerDTO.cs",
@@ -371,7 +383,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 19,
               "Title": "ItemReceiveController.cs",
               "DocumentMoniker": "D:\\Invemtory_Management_System\\InventoryManagement\\Controllers\\ItemReceiveController.cs",
               "RelativeDocumentMoniker": "InventoryManagement\\Controllers\\ItemReceiveController.cs",
@@ -383,7 +395,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 24,
               "Title": "Sales.cs",
               "DocumentMoniker": "D:\\Invemtory_Management_System\\InventoryManagement\\Models\\Sales.cs",
               "RelativeDocumentMoniker": "InventoryManagement\\Models\\Sales.cs",
@@ -395,7 +407,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 21,
               "Title": "ItemController.cs",
               "DocumentMoniker": "D:\\Invemtory_Management_System\\InventoryManagement\\Controllers\\ItemController.cs",
               "RelativeDocumentMoniker": "InventoryManagement\\Controllers\\ItemController.cs",
@@ -407,7 +419,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 20,
               "Title": "ItemReceive.cs",
               "DocumentMoniker": "D:\\Invemtory_Management_System\\InventoryManagement\\Models\\ItemReceive.cs",
               "RelativeDocumentMoniker": "InventoryManagement\\Models\\ItemReceive.cs",
@@ -419,7 +431,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 22,
               "Title": "Supplier.cs",
               "DocumentMoniker": "D:\\Invemtory_Management_System\\InventoryManagement\\Models\\Supplier.cs",
               "RelativeDocumentMoniker": "InventoryManagement\\Models\\Supplier.cs",
@@ -431,7 +443,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 23,
               "Title": "SupplierController.cs",
               "DocumentMoniker": "D:\\Invemtory_Management_System\\InventoryManagement\\Controllers\\SupplierController.cs",
               "RelativeDocumentMoniker": "InventoryManagement\\Controllers\\SupplierController.cs",
@@ -443,7 +455,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 25,
               "Title": "SalesReturnController.cs",
               "DocumentMoniker": "D:\\Invemtory_Management_System\\InventoryManagement\\Controllers\\SalesReturnController.cs",
               "RelativeDocumentMoniker": "InventoryManagement\\Controllers\\SalesReturnController.cs",
@@ -452,18 +464,6 @@
               "ViewState": "AgIAAEkAAAAAAAAAAAAawFAAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-28T12:05:05.405Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "inventoryManagementContext.cs",
-              "DocumentMoniker": "D:\\Invemtory_Management_System\\InventoryManagement\\Models\\inventoryManagementContext.cs",
-              "RelativeDocumentMoniker": "InventoryManagement\\Models\\inventoryManagementContext.cs",
-              "ToolTip": "D:\\Invemtory_Management_System\\InventoryManagement\\Models\\inventoryManagementContext.cs",
-              "RelativeToolTip": "InventoryManagement\\Models\\inventoryManagementContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-28T18:17:44.964Z"
             },
             {
               "$type": "Document",

@@ -20,24 +20,49 @@ namespace InventoryManagement.Controllers
         }
 
         [HttpGet]
-        public async Task<IActionResult> GetAll()
+        public async Task<IActionResult> GetAll(int pageNumber = 1, int pageSize = 5)
         {
-            var categories = await _context.Category
-                .Select(c => new CategoryDTO
-                {
-                    CategoryID = c.CategoryID,
-                    CategoryName = c.CategoryName,
-                    Description = c.Description,
-                    Vat = c.Vat,
-                    CreateBy = c.CreateBy,
-                    CreateDate = c.CreateDate,
-                    UpdateBy = c.UpdateBy,
-                    UpdateDate = c.UpdateDate
-                })
-                .ToListAsync();
+            try
+            {
+                if (pageNumber < 1) pageNumber = 1;
+                if (pageSize < 1) pageSize = 5;
 
-            return Ok(categories);
+                IQueryable<Category> query = _context.Category;
+
+                int totalCount = await query.CountAsync();
+
+                var categories = await query
+                    .OrderBy(c => c.CategoryID)
+                    .Skip((pageNumber - 1) * pageSize)
+                    .Take(pageSize)
+                    .Select(c => new CategoryDTO
+                    {
+                        CategoryID = c.CategoryID,
+                        CategoryName = c.CategoryName,
+                        Description = c.Description,
+                        Vat = c.Vat,
+                        CreateBy = c.CreateBy,
+                        CreateDate = c.CreateDate,
+                        UpdateBy = c.UpdateBy,
+                        UpdateDate = c.UpdateDate
+                    }).
+                    ToListAsync();
+                return Ok(new
+                {
+                    Data = categories,
+                    TotalCount = totalCount,
+                    PageNumber = pageNumber,
+                    PageSize = pageSize
+                });
+            }
+            catch(Exception ex)
+            {
+                Console.WriteLine("Error: " + ex.Message);
+                return StatusCode(500, "Internal server error. Please try again later.");
+            }
         }
+
+
 
         [HttpGet("{id}")]
         public async Task<IActionResult> GetById(string id)
